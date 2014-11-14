@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: memberships
+#
+#  id            :integer          not null, primary key
+#  membership_id :integer
+#  child_id      :integer
+#  program_id    :integer
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  membership_id: 1
+  child_id: 1
+  program_id: 1
+
+two:
+  membership_id: 1
+  child_id: 1
+  program_id: 1
