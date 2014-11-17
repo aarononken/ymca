@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :families
   resources :admins
   resources :checks
-  resources :childs
+  resources :children
   resources :families
   resources :memperships
   resources :programs
