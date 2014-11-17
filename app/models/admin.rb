@@ -25,6 +25,6 @@ class Admin < ActiveRecord::Base
   belongs_to :check
   belongs_to :child
   belongs_to :family
-  Belongs_to :membership
+  belongs_to :membership
   belongs_to :program
 end
