@@ -12,4 +12,7 @@
 #
 
 class Check < ActiveRecord::Base
+  belongs_to :admin
+  belongs_to :child
+  belongs_to :family
 end

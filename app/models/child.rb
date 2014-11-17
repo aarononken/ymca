@@ -11,4 +11,9 @@
 #
 
 class Child < ActiveRecord::Base
+  belongs_to :check
+  belongs_to :admin
+  belongs_to :family
+  belongs_to :membership
+  belongs_to :program
 end
