@@ -22,12 +22,11 @@ class Admin < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable
-<<<<<<< HEAD
+
   belongs_to :check
   belongs_to :child
   belongs_to :family
   belongs_to :membership
   belongs_to :program
-=======
->>>>>>> da7b64e7cd53a946eb5b2921e8ecec2e68502094
+
 end
