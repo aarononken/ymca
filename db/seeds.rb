@@ -1,8 +1,7 @@
-Family.create(parent_first_name: 'Sally', parent_last_name: 'Shoe', phone: '1234567890', address: '123 Main Street', spouse_name: 'Billy Bob Shoe', email: 'shoes@email.com')
-Family.create(parent_first_name: 'Mary', parent_last_name: 'Smith', phone: '5432134567', address: '123 Elm Street', spouse_name: 'Carl Adams')
+Family.create(parent_first_name: "Bob", parent_last_name: "Shoe", spouse_name: "Judy", phone: "4028675309", address: "1234 A Street")
 
 
-Child.create(child_first_name: 'Teddy', child_last_name: 'Shoe', family_id: '1')
+Child.create(child_first_name: 'Teddy', child_last_name: 'Shoe', family_id: 1)
 Child.create(child_first_name: 'Ameer', child_last_name: 'Abdullah', family_id: '2')
 Child.create(child_first_name: 'Hector', child_last_name: 'Abdullah', family_id: '2')
 Child.create(child_first_name: 'Missy', child_last_name: 'Adams', family_id: '3')
