@@ -1,5 +1,23 @@
 Family.create(parent_first_name: 'Sally', parent_last_name: 'Shoe', phone: '1234567890', address: '123 Main Street', spouse_name: 'Billy Bob Shoe', email: 'shoes@email.com')
+Family.create(parent_first_name: 'Mary', parent_last_name: 'Smith', phone: '5432134567', address: '123 Elm Street', spouse_name: 'Carl Adams')
+
 
 Child.create(child_first_name: 'Teddy', child_last_name: 'Shoe', family_id: '1')
 Child.create(child_first_name: 'Ameer', child_last_name: 'Abdullah', family_id: '2')
+Child.create(child_first_name: 'Hector', child_last_name: 'Abdullah', family_id: '2')
+Child.create(child_first_name: 'Missy', child_last_name: 'Adams', family_id: '3')
+Child.create(child_first_name: 'Sissy', child_last_name: 'Adams', family_id: '3')
+Child.create(child_first_name: 'Tissy', child_last_name: 'Adams', family_id: '3')
+Child.create(child_first_name: 'Rissy', child_last_name: 'Adams', family_id: '3')
+Child.create(child_first_name: 'Patch', child_last_name: 'Adams', family_id: '3')
+Child.create(child_first_name: 'Terry', child_last_name: 'Hogan', family_id: '4')
+Child.create(child_first_name: 'Adam', child_last_name: 'Levine', family_id: '5')
+Child.create(child_first_name: 'Bert', child_last_name: 'Smith', family_id: '6')
+Child.create(child_first_name: 'Ernie', child_last_name: 'Smith', family_id: '6')
+Child.create(child_first_name: 'Grover', child_last_name: 'Smith', family_id: '6')
+Child.create(child_first_name: 'Emilee', child_last_name: 'Hill', family_id: '7')
+Child.create(child_first_name: 'Elliot', child_last_name: 'Hill', family_id: '8')
+Child.create(child_first_name: 'Addison', child_last_name: 'Kelly', family_id: '9')
+Child.create(child_first_name: 'Jacob', child_last_name: 'Kelly', family_id: '9')
+Child.create(child_first_name: 'Terrance', child_last_name: 'Hickman', family_id: '10')
 
