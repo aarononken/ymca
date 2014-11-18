@@ -12,5 +12,5 @@ class Program < ActiveRecord::Base
   belongs_to :child
   belongs_to :family
   belongs_to :check
-  has-many :memberships
+  has_many :memberships
 end
