@@ -9,8 +9,6 @@
 #
 
 class Program < ActiveRecord::Base
-  belongs_to :child
-  belongs_to :family
-  belongs_to :check
   has_many :memberships
+  has_many :checks
 end
