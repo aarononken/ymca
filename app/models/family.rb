@@ -1,7 +1,18 @@
+# == Schema Information
+#
+# Table name: families
+#
+#  id                :integer          not null, primary key
+#  parent_first_name :string
+#  parent_last_name  :string
+#  spouse_name       :string
+#  phone             :string
+#  address           :string
+#  password          :string
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#
+
 class Family < ActiveRecord::Base
   has_many :children
-  has_many :memberships
-  has_many :programs
-  belongs_to :check
-  belongs_to :admin
 end
