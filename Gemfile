@@ -1,10 +1,7 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
 gem 'seedbank'
 gem 'thin'
-=======
->>>>>>> 7a4f5e03c22206f5b02be8b16dad26907289a8c7
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
