@@ -1,6 +1,13 @@
 Family.create(parent_first_name: "Bob", parent_last_name: "Shoe", spouse_name: "Judy", phone: "4028675309", address: "1234 A Street")
 Family.create(parent_first_name: "Sue", parent_last_name: "Abdullah", spouse_name: "Heisman", phone: "4027853709", address: "1234 B Street")
 Family.create(parent_first_name: "Wednesday", parent_last_name: "Adams", spouse_name: "Gomez", phone: "4025654326", address: "1234 C Street")
+Family.create(parent_first_name: "Amanda", parent_last_name: "Hogan", phone: "9098765432", address: "1234 D Street")
+Family.create(parent_first_name: "Carl", parent_last_name: "Levine", spouse_name: "Hillary", phone: "8889997777", address: "1234 J Street")
+Family.create(parent_first_name: "Maria", parent_last_name: "Smith", spouse_name: "Gordon", phone: "3214567567", address: "1623 Sesame Street")
+Family.create(parent_first_name: "Michelle", parent_last_name: "Smith", phone: "4028895253", address: "10805 Brown Street")
+Family.create(parent_first_name: "Greg", parent_last_name: "Smith", spouse_name: "Rachel", phone: "6754389876", address: "2121 Jump Street")
+Family.create(parent_first_name: "Tabby", parent_last_name: "Kelly", spouse_name: "Mike", phone: "9098762432", address: "1234 Q Street")
+Family.create(parent_first_name: "Jermaine", parent_last_name: "Hickman", spouse_name: "Gloria", phone: "4027879654", address: "3232 N 102 Street")
 
 
 Child.create(child_first_name: 'Teddy', child_last_name: 'Shoe', family_id: 1)
