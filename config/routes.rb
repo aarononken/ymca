@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admins
-  devise_for :families
+  resources :families
   resources :admins
   resources :checks
   resources :children
