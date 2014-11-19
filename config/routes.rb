@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
   devise_for :admins
   resources :families
-  resources :admins
   resources :checks
   resources :children
-  resources :families
   resources :memperships
   resources :programs
   
