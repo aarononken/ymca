@@ -8,7 +8,6 @@ class Admin::SessionsController < Devise::SessionsController
 
    POST /resource/sign_in
    def create
-     super
      redirect_to admin_index_path
    end
 
