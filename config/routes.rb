@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :admins
-  resources :families
-  resources :checks
-  resources :children
-  resources :memperships
-  resources :programs
-  
+  devise_for :admin
+  resources :checks  
   root 'checks#new'
   
   # The priority is based upon order of creation: first created -> highest priority.

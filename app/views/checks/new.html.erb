@@ -1,15 +1,21 @@
 <h1 align="center">Please sign in!</h1>
 
 <div align="center">
-<%= form_tag do %>
+<%= form_tag @check do |f| %>
+
 	<%= label_tag :last_name %>
 	<%= text_field_tag :parent_last_name %>
 	<br>
 	<%= label_tag :password %>
 	<%= password_field_tag :password %>
 	<br>
+	<%= label_tag :child_first_name %>
+	<%= text_field_tag :child_first_name %>
+	<br>
+	<%= label_tag :program %>
+	<%= text_field_tag :program %>
+	<br>
 	<%= submit_tag "Check In!" %>
 
 <% end %>
 </div>
-
