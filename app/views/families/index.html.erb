@@ -1,1 +1,15 @@
-<div align="center">Here is where all the families go!</div>
+<h1>Families</h1>
+
+<% @families.each do |family| %>
+  <table class="family_table">
+    <tr>
+      <td>
+        <%= link_to family.parent_first_name, family %>
+        <%= link_to family.parent_last_name, family %> &
+        <%= link_to family.spouse_name, family %> :
+      </td>
+      <td><%= family.phone %></td>
+      <td><%= family.address %></td>
+    </tr>
+  </table>
+<% end %>

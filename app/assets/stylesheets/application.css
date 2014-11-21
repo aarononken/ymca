@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.family_table {
+  font-family: Arial;
+}
+
+.family_show {
+  font-family: Arial;
+}
