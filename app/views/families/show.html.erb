@@ -1,3 +1,4 @@
+<h2>Family</h2>
 <div class="family_show">
 <%= @family.parent_first_name %> & 
 <%= @family.spouse_name %>
@@ -7,4 +8,13 @@
 <%= @family.address %>
 </div>
 
-<%= link_to "Add a child to this family", new_child_path %>
+<h2>Children</h2>
+<div>
+<% @family.children.each do |child| %>
+  <%= child.child_first_name %>
+  <%= child.child_last_name %>
+  <br>
+<% end %>
+</div>
+
+<div><%= link_to "Add a child to this family", new_child_path %></div>
