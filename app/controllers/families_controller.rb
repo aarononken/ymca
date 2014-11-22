@@ -6,7 +6,12 @@ class FamiliesController < ApplicationController
   
   def create
     @family = Family.new(family_params)
-    @family.save
+    
+    if @family.save
+      redirect_to @family, notice: "Successfully created!"
+    else
+      render :new, alert: "Something was wrong. Try again."
+    end
   end
   
   def index
