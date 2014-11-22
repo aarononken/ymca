@@ -13,11 +13,18 @@
  *= require_tree .
  *= require_self
  */
+.family_check_in_out_form {
+  
+}
 
 .family_table {
   font-family: Arial;
 }
 
 .family_show {
+  font-family: Arial;
+}
+
+.new_family_form {
   font-family: Arial;
 }

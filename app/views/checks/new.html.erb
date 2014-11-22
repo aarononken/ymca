@@ -1,21 +1,15 @@
 <h1>Please sign in!</h1>
 
-<div class="family_log_in">
-<%= form_tag @check do |f| %>
+<div class="family_check_in_out_form">
+  <%= form_for @check do |f| %>
 
-	<%= label_tag :last_name %>
-	<%= text_field_tag :parent_last_name %>
-	<br>
-	<%= label_tag :password %>
-	<%= password_field_tag :password %>
-	<br>
-	<%= label_tag :child_first_name %>
-	<%= text_field_tag :child_first_name %>
-	<br>
-	<%= label_tag :program %>
-	<%= text_field_tag :program %>
-	<br>
-	<%= submit_tag "Check In!" %>
+    <%= f.label :family_id %>
+    <%= f.text_field :family_id %>
+    <br>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <br>
+    <%= f.submit "Confirm!" %>
 
-<% end %>
+  <% end %>
 </div>

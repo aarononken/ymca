@@ -15,4 +15,12 @@
 
 class Family < ActiveRecord::Base
   has_many :children
+
+  def password
+  	nil
+  end
+
+  def password=(new_password)
+  	password = new_password
+  end
 end
