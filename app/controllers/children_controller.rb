@@ -13,6 +13,8 @@ class ChildrenController < ApplicationController
 
   def create
   	@child = Child.new(child_params)
+    @child.family_id = current_family.id
+
   	@child.save
   end
 
