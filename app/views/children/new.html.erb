@@ -1,8 +1,8 @@
 <div class="add_child_form">
 Add children to family:
 
-<%= form_for @family.child.build do |f| %>
-	<%= form.hidden_field :family_id %>
+<%= form_for @child do |f| %>
+	<%= f.hidden_field :family_id %>
 
 	<%= f.label :child_first_name %>
 	<%= f.text_field :child_first_name %>

@@ -13,9 +13,8 @@ class ChildrenController < ApplicationController
 
   def create
   	@child = Child.new(child_params)
-    @child.family_id = current_family.id
-
   	@child.save
+    redirect_to :back
   end
 
   def child_params

@@ -8,9 +8,9 @@ class SessionsController < ApplicationController
 
 		if family && family.authentic?(params[:password])
 			session[:family_id] = family.id
-			redirect_to root_url, notice: "Thanks!"
+			redirect_to new_check_path, notice: "Thanks!"
 		else
-			redirect_to root_url, alert: "Something went wrong. Try again."
+			redirect_to sign_in_url, alert: "Something went wrong. Try again."
 		end
 	end
 
