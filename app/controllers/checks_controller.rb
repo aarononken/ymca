@@ -1,4 +1,5 @@
 class ChecksController < ApplicationController
+	before_action :require_family, only: [:new]
 	  
 	def new
 		@check = Check.new

@@ -4,13 +4,13 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-		family = Family.find_by(:parent_last_name)
+		family = Family.find_by(parent_last_name: params[:parent_last_name])
 
 		if family && family.authentic?(params[:password])
 			session[:family_id] = family.id
 			redirect_to new_check_path, notice: "Thanks!"
 		else
-			redirect_to sign_in_url, alert: "Something went wrong. Try again."
+			redirect_to new_check_path, alert: "Something went wrong. Try again."
 		end
 	end
 
