@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :checks
   resources :programs
   resources :memberships  
+  resources :sessions
   
   get "/sign_in", to: "sessions#new", as: :sign_in
   post "/sign_in", to: "sessions#create", as: :create_sign_in

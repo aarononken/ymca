@@ -8,7 +8,7 @@ class FamiliesController < ApplicationController
     @family = Family.new(family_params)
     
     if @family.save
-      redirect_to @family, notice: "Successfully created!"
+      redirect_to root_url, notice: "Successfully created!"
     else
       render :new, alert: "Something was wrong. Try again."
     end
