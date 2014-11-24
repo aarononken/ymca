@@ -15,9 +15,7 @@
 
 class Family < ActiveRecord::Base
   has_many :children
-  
-  attr_accessor :password
-  
+    
   def self.authenticate(parent_last_name, password)
     family = find_by_parent_last_name(parent_last_name)
     if family && family.password == password
