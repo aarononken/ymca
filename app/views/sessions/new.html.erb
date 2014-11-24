@@ -1,0 +1,11 @@
+<h1>Please sign in:</h1>
+
+<%= form_tag sessions_path do %>
+  <%= label_tag :parent_last_name %>
+  <%= text_field_tag :parent_last_name, params[:parent_last_name] %>
+
+	<%= label_tag :password %>
+	<%= password_field_tag :password %>
+
+	<%= submit_tag "Sign In" %>
+<% end %>

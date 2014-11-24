@@ -7,15 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
 
+<<<<<<< HEAD
   <%= image_tag "logo-ymca.jpg" %>
 
 <%= yield %>
 
+=======
+<%= image_tag "logo-ymca.jpg" %>
+>>>>>>> f5478b094ca1c5c2c8b022009612285d19be7622
 <% if signed_in? %>
   <div align="right"><%= link_to "Admin Logout", destroy_admin_session_path, method: :delete %></div>
 <% else %>
   <div align="right"><%= link_to "Admin Login", new_admin_session_path %></div>
 <% end %>
+  
+<%= yield %>
+
 </body>
 </html>

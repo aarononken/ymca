@@ -1,16 +1,16 @@
 <h2>Family</h2>
 <div class="family_show">
-<%= @family.parent_first_name %> & 
-<%= @family.spouse_name %>
-<%= @family.parent_last_name %>
-<br>
-<%= @family.phone %>
-<%= @family.address %>
+	<%= @family.parent_first_name %> & 
+	<%= @family.spouse_name %>
+	<%= @family.parent_last_name %>
+	<br>
+	<%= @family.phone %>
+	<%= @family.address %>
 </div>
 
 <h2>Children</h2>
 <div>
-<% @family.children.each do |child| %>
+<%= @family.children.each do |child| %>
   <%= child.child_first_name %>
   <%= child.child_last_name %>
   <br>

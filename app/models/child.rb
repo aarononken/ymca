@@ -13,5 +13,6 @@
 class Child < ActiveRecord::Base
   belongs_to :family
   has_many :memberships
+  has_many :programs, through: :memberships
   has_many :checks
 end

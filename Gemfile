@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-
-gem 'seedbank'
+gem "activeadmin", github: "objectlateral/activeadmin"
+gem "inherited_resources", github: "andriytyurnikov/inherited_resources", branch: "rails_4_2"
 gem 'thin'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

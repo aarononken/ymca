@@ -1,4 +1,15 @@
-<div align="center">
-This is where you add new children to a family!<br>
-(Soon, you'll actually be able to do this.)
+<div class="add_child_form">
+Add children to family:
+
+<%= form_for @child do |f| %>
+	<%= f.hidden_field :family_id %>
+
+	<%= f.label :child_first_name %>
+	<%= f.text_field :child_first_name %>
+	<br>
+	<%= f.label :child_last_name %>
+	<%= f.text_field :child_last_name %>
+	<br>
+	<%= f.submit %>
+<% end %>
 </div>

@@ -6,10 +6,10 @@ class Admin::SessionsController < Devise::SessionsController
   #   super
   # end
 
-   POST /resource/sign_in
-   def create
-     redirect_to admin_index_path
-   end
+  # POST /resource/sign_in
+  # def create
+  #   redirect_to admin_index_path
+  # end
 
   # DELETE /resource/sign_out
   # def destroy
