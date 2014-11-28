@@ -12,6 +12,7 @@
   <%= content_tag :div, msg, :id => "flash_#{name}" %>
 <% end %>
 
+<<<<<<< HEAD
 <div id="logo">
 <%= image_tag "logo-ymca.jpg" %>
 </div>
@@ -25,6 +26,12 @@
 	</div>
 <% end %>
   
+=======
+  <%= image_tag "logo-ymca.jpg" %>
+
+<%= yield %>
+
+>>>>>>> 16c26b4c799c742ee1509d868f61ca90cc249b82
 <% if signed_in? %>
   <div align="right"><%= link_to "Admin Logout", destroy_admin_session_path, method: :delete %></div>
 <% else %>
