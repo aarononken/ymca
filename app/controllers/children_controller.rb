@@ -13,6 +13,7 @@ class ChildrenController < ApplicationController
 
   def create
   	@child = Child.new(child_params)
+    @child.family_id = family_id(params[:id])
   	@child.save
     redirect_to :back
   end
