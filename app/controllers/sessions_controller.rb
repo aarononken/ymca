@@ -4,14 +4,14 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-    family = Family.authenticate(params[:parent_last_name], params[:password])
+    	family = Family.authenticate(params[:parent_last_name], params[:password])
 
 		if family
-      session[:family_id] = family.id
-      redirect_to root_url, notice: "Welcome!"
+      		session[:family_id] = family.id
+      		redirect_to new_check_path
 		else
-      flash.now.alert = "Invalid last name or password."
-      render "new"
+      		flash.now.alert = "Invalid last name or password."
+      		render "new"
 		end
 	end
 
