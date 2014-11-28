@@ -18,6 +18,7 @@ class ChecksController < ApplicationController
 
 		@check = Check.new(check_params)
 		@check.family_id = current_family.id
+		@check.toggle(:checked_in)
 
 		if @check.save
 			redirect_to new_check_path, notice: "Thanks!"
