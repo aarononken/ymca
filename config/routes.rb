@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   devise_for :admin
   resources :families
   resources :children
-  resources :checks, only: [:new, :create]
+  resources :checks
   resources :programs
   resources :memberships  
   
