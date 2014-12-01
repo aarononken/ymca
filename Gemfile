@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-# gem "activeadmin", github: "objectlateral/activeadmin"
+gem "activeadmin", github: "objectlateral/activeadmin"
+gem "devise"
 gem "inherited_resources", github: "andriytyurnikov/inherited_resources", branch: "rails_4_2"
 gem 'thin'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
