@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
-gem "activeadmin", github: "objectlateral/activeadmin"
+# gem "activeadmin", github: "objectlateral/activeadmin"
 gem "inherited_resources", github: "andriytyurnikov/inherited_resources", branch: "rails_4_2"
 gem 'thin'
-gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
 # Use sqlite3 as the database for Active Record

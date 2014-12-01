@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :admin
   resources :families
   resources :children
   resources :checks, only: [:new, :create]
