@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   resources :families
   resources :children
-  resources :checks, only: [:new, :create]
+  resources :checks
   resources :programs
   resources :memberships  
   
