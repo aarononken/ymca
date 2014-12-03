@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  devise_for :admin
   resources :families
   resources :children
   resources :checks

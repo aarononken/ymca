@@ -11,6 +11,6 @@
 #
 
 class Membership < ActiveRecord::Base
-  belongs_to :programs
-  belongs_to :children
+  belongs_to :program
+  belongs_to :child
 end
