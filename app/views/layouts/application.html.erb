@@ -24,9 +24,9 @@
 <% end %>
 
 <% if signed_in? %>
-  <div align="right"><%= link_to "Admin Logout", destroy_admin_session_path, method: :delete %></div>
+  <div align="right"><%= link_to "Admin Logout", destroy_admin_user_session_path, method: :delete %></div>
 <% else %>
-  <div align="right"><%= link_to "Admin Login", new_admin_session_path %></div>
+  <div align="right"><%= link_to "Admin Login", new_admin_user_session_path %></div>
 <% end %>
 
 </body>

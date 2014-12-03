@@ -14,4 +14,5 @@
 class Check < ActiveRecord::Base
   belongs_to :child
   belongs_to :program
+  belongs_to :family
 end
