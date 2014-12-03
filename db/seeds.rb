@@ -28,3 +28,7 @@ Child.create(child_first_name: 'Elliot', child_last_name: 'Hill', family_id: 8)
 Child.create(child_first_name: 'Addison', child_last_name: 'Kelly', family_id: 9)
 Child.create(child_first_name: 'Jacob', child_last_name: 'Kelly', family_id: 9)
 Child.create(child_first_name: 'Terrance', child_last_name: 'Hickman', family_id: 10)
+
+Program.create(program_name: "Child Care")
+Program.create(program_name: "After School")
+Program.create(program_name: "Summer Day Camp")
