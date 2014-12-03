@@ -17,7 +17,11 @@ ActiveAdmin.setup do |config|
   #
   # Note: Aim for an image that's 21px high so it fits in the header.
   #
+<<<<<<< HEAD
   # config.site_title_image = "logo-ymca.jpg"
+=======
+  # config.site_title_image = "logo.png"
+>>>>>>> 6bbe90803b9a290af38cb5de1d628e2cd3d459b9
 
   # == Default Namespace
   #
@@ -118,10 +122,17 @@ ActiveAdmin.setup do |config|
   # This allows your users to comment on any resource registered with Active Admin.
   #
   # You can completely disable comments:
+<<<<<<< HEAD
    config.allow_comments = false
   #
   # You can disable the menu item for the comments index page:
    config.show_comments_in_menu = false
+=======
+  # config.allow_comments = false
+  #
+  # You can disable the menu item for the comments index page:
+  # config.show_comments_in_menu = false
+>>>>>>> 6bbe90803b9a290af38cb5de1d628e2cd3d459b9
   #
   # You can change the name under which comments are registered:
   # config.comments_registration_name = 'AdminComment'
