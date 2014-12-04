@@ -7,7 +7,7 @@
     	<%= f.collection_select :child_id, current_family.children, :id, :child_first_name %>
     <br>
     <%= f.label :program_id %>
-    <%= f.select :program_id, options_for_select([["After School", 1],["Day Care", 2],["Summer", 3]]) %>
+    <%= f.collection_select :program_id, Program.all, :id, :program_name %>
 		<br>
 		<%= f.submit %>
 	<% end %>
