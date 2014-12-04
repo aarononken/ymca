@@ -8,8 +8,11 @@ Family.create(parent_first_name: "Michelle", parent_last_name: "Smith", phone: "
 Family.create(parent_first_name: "Greg", parent_last_name: "Smith", spouse_name: "Rachel", phone: "6754389876", address: "2121 Jump Street", password: "0000")
 Family.create(parent_first_name: "Tabby", parent_last_name: "Kelly", spouse_name: "Mike", phone: "9098762432", address: "1234 Q Street", password: "0000")
 Family.create(parent_first_name: "Jermaine", parent_last_name: "Hickman", spouse_name: "Gloria", phone: "4027879654", address: "3232 N 102 Street", password: "0000")
+Family.create(parent_first_name: "Marge", parent_last_name: "Simpson", spouse_name: "Homer", phone: "9395550113", address: "742 Evergreen Terrace", password: "duff")
 
-
+Child.create(child_first_name: 'Bart', child_last_name: 'Simpson', family_id: 11)
+Child.create(child_first_name: 'Lisa', child_last_name: 'Simpson', family_id: 11)
+Child.create(child_first_name: 'Maggie', child_last_name: 'Simpson', family_id: 11)
 Child.create(child_first_name: 'Teddy', child_last_name: 'Shoe', family_id: 1)
 Child.create(child_first_name: 'Ameer', child_last_name: 'Abdullah', family_id: 2)
 Child.create(child_first_name: 'Hector', child_last_name: 'Abdullah', family_id: 2)
@@ -32,3 +35,15 @@ Child.create(child_first_name: 'Terrance', child_last_name: 'Hickman', family_id
 Program.create(program_name: "Child Care")
 Program.create(program_name: "After School")
 Program.create(program_name: "Summer Day Camp")
+
+Membership.create(program_id: 2, child_id: 1)
+Membership.create(program_id: 3, child_id: 1)
+Membership.create(program_id: 2, child_id: 2)
+Membership.create(program_id: 2, child_id: 2)
+Membership.create(program_id: 3, child_id: 3)
+
+Check.create(family_id: 11, child_id: 1, program_id: 2, checked_in: true)
+Check.create(family_id: 11, child_id: 2, program_id: 2, checked_in: true)
+Check.create(family_id: 11, child_id: 3, program_id: 1, checked_in: true)
+
+AdminUser.create(email:'admin@example.com', password:'password')
