@@ -12,3 +12,16 @@
 		<%= f.submit %>
 	<% end %>
 </div>
+
+<br>
+
+<div>
+  Children currently checked in:
+  <div>
+      <% current_family.children.each do |child| %>
+        <% if child.checks.last.checked_in == true %>
+          <%= child.child_first_name + " " + child.child_last_name + ": " + child.checks.last.program.program_name %><br>
+        <% end %>
+      <% end %>
+  </div>
+</div>
