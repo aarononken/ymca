@@ -18,7 +18,12 @@ class ChecksController < ApplicationController
 
 		@check = Check.new(check_params)
 		@check.family_id = current_family.id
-		@check.toggle(:checked_in)
+    
+    if @check.child.checks.last.checked_in == false
+      @check.checked_in = true
+    else
+      @check.checked_in = false
+    end
 
 		if @check.save
 			redirect_to new_check_path, notice: "Thanks!"
