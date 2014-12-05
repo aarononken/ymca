@@ -15,13 +15,18 @@
 
 <br>
 
-<div>
-  Children currently checked in:
+<% if current_family.checks.present? %>
   <div>
-      <% current_family.children.each do |child| %>
-        <% if child.checks.last.checked_in == true %>
-          <%= child.child_first_name + " " + child.child_last_name + ": " + child.checks.last.program.program_name %><br>
+    Children currently checked in:<br>
+    <span>
+        <% current_family.children.each do |child| %>
+          <% if child.checks.last.checked_in == true %>
+            <%= child.child_first_name %>
+            <%= child.child_last_name %> - 
+            <%= child.checks.last.program.program_name %>
+            <br>
+          <% end %>
         <% end %>
-      <% end %>
+    </span>
   </div>
-</div>
+<% end %>
