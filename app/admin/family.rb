@@ -1,7 +1,13 @@
 ActiveAdmin.register Family do
 
-
-  # See permitted parameters documentation:
+  controller do
+    before_action :set_secure_password, only: [:create, :update]
+    
+    def set_secure_password
+      params[:family][:password] = SecureRandom.hex(2)
+    end
+  end
+#   See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
   # permit_params :list, :of, :attributes, :on, :model
