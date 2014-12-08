@@ -6,6 +6,7 @@ class FamiliesController < ApplicationController
   
   def create
     @family = Family.new(family_params)
+    @family.password = SecureRandom.hex(2)
     
     if @family.save
       redirect_to root_url, notice: "Successfully created!"
@@ -23,6 +24,6 @@ class FamiliesController < ApplicationController
   end
   
   def family_params
-    params.require(:family).permit(:parent_first_name, :parent_last_name, :phone, :spouse_name, :address)
+    params.require(:family).permit(:parent_first_name, :parent_last_name, :phone, :spouse_name, :address, :password)
   end
 end
