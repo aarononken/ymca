@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20141201164054) do
-=======
 ActiveRecord::Schema.define(version: 20141204163328) do
->>>>>>> 0f628b05bff1db33ec616598082dcc330efb20d5
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -95,11 +91,10 @@ ActiveRecord::Schema.define(version: 20141204163328) do
   end
 
   create_table "memberships", force: true do |t|
-    t.integer  "membership_id"
     t.integer  "child_id"
     t.integer  "program_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "programs", force: true do |t|
