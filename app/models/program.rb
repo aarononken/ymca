@@ -11,4 +11,5 @@
 class Program < ActiveRecord::Base
   has_many :memberships
   has_many :children, through: :memberships
+  has_many :checks
 end
