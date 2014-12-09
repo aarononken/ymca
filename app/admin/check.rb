@@ -13,6 +13,22 @@ ActiveAdmin.register Check do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-
-
+  index do
+    column "First Name" do |check|
+      check.child.child_first_name
+    end
+    column "Last Name" do |check|
+      check.child.child_last_name
+    end
+    column "Checked In" do |check|
+      check.checked_in
+    end
+    column "Program" do |check|
+      check.program.program_name
+    end
+    column do |check|
+      check.created_at
+    end
+    actions
+  end
 end
