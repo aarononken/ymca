@@ -28,5 +28,10 @@ ActiveAdmin.register Family do
     column :address
     actions
   end
-
+  
+  filter :parent_first_name
+  filter :parent_last_name
+  filter :phone
+  filter :address
+  
 end
