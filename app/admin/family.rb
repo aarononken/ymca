@@ -20,6 +20,13 @@ ActiveAdmin.register Family do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-
+  index do
+    column :parent_first_name
+    column :parent_last_name
+    column :spouse_name
+    column :phone
+    column :address
+    actions
+  end
 
 end
