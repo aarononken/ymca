@@ -12,24 +12,31 @@
   <%= content_tag :div, msg, :id => "flash_#{name}" %>
 <% end %>
 
-<div class="logo">
-  <%= image_tag "logo-ymca.jpg" %>
-  </div>
-
-<%= yield %>
-
-<% if current_family %>
-	<div align="left">
+<% if signed_in? %>
+  <div id="admin_out"><%= link_to "Admin Logout", destroy_admin_user_session_path, method: :delete %></div>
+<% else %>
+  <div id="admin_in"><%= link_to "Admin Login", new_admin_user_session_path %></div>
+<% end %>
+  
+    <% if current_family %>
+	<div id="family">
 		Welcome, <%= current_family.parent_last_name %> family! |
 		<%= link_to "Sign Out", sign_out_path %>
 	</div>
 <% end %>
+  <div class="clear"></div>
+  
+  <div class="logo">
+  <%= image_tag "logo-ymca.jpg" %>
+  </div>
+  
 
-<% if signed_in? %>
-  <div align="right"><%= link_to "Admin Logout", destroy_admin_user_session_path, method: :delete %></div>
-<% else %>
-  <div align="right"><%= link_to "Admin Login", new_admin_user_session_path %></div>
-<% end %>
+
+<%= yield %>
+
+
+
+
 
 </body>
 </html>

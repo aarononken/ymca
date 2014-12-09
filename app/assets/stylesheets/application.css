@@ -1,11 +1,27 @@
 body {
   font-family: Arial;
   font-size: 18px;
-  text-align: center;
+
 }
 
 .logo {
-  text-align: left;
+  text-align: center;
+}
+
+#family {
+  float: right;
+}
+
+#admin_in {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+#admin_out {
+  float: left;
 }
 
 h1 {
@@ -13,12 +29,14 @@ h1 {
   font-size: 24px;
   text-decoration: underline;
   padding-bottom: 20px;
+     text-align: center;
+
 }
 
 
 
-.family_check_in_out_form {
-  
+.family_log_in_form {
+    text-align: center;
 }
 
 .family_table {
@@ -38,5 +56,5 @@ h1 {
 }
 
 .check-in-out-form {
-	
+	  text-align: center;
 }
