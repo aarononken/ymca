@@ -13,11 +13,18 @@ ActiveAdmin.register Child do
   #   permitted << :other if resource.something?
   #   permitted
   # end
+  
+  controller do
+    def scoped_collection
+      resource_class.includes(:family)
+    end
+  end
+  
   index do
     column :child_first_name
     column :child_last_name
     column "Family" do |child|
-      link_to child.family.parent_last_name, admin_family_path(child.family)
+      link_to child.family.parent_last_name, admin_family_path(child.family), :sortable => true
     end
     column :created_at
     actions
