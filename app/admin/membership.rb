@@ -13,6 +13,16 @@ ActiveAdmin.register Membership do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-
-
+  index do
+    column "First Name" do |membership|
+      membership.child.child_first_name
+    end
+    column "Last Name" do |membership|
+      membership.child.child_last_name
+    end
+    column "Program" do |membership|
+      membership.program.program_name
+    end
+    actions
+  end
 end
