@@ -13,7 +13,7 @@ ActiveAdmin.register Child do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-  
+    
   controller do
     def scoped_collection
       resource_class.includes(:family)
@@ -29,4 +29,8 @@ ActiveAdmin.register Child do
     column :created_at
     actions
   end
+  
+  filter :child_first_name
+  filter :child_last_name
+  
 end
