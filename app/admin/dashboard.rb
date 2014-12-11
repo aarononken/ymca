@@ -5,6 +5,12 @@ ActiveAdmin.register_page "Dashboard" do
     columns do
       column do
         panel "Child Care" do
+          table_for Check.where(checked_in: true).last do |check|
+            column("First Name")     {|check| }
+            column("Last Name")      {|check| }
+            column("Program")        {|check| }
+            column("Checked in at")  {|check| }
+          end
         end
         
         panel "Summer Day Camp" do

@@ -31,4 +31,5 @@ ActiveAdmin.register Check do
     end
     actions
   end
+  
 end
