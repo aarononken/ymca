@@ -34,4 +34,15 @@ ActiveAdmin.register Family do
   filter :phone
   filter :address
   
+  form do |f|
+    f.inputs "Family Details" do
+      f.input :parent_first_name
+      f.input :parent_last_name
+      f.input :spouse_name
+      f.input :phone
+      f.input :address
+    end
+    f.actions
+  end
+  
 end

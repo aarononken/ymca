@@ -14,6 +14,7 @@ ActiveAdmin.register Check do
   #   permitted
   # end
   index do
+    selectable_column
     column "First Name" do |check|
       check.child.child_first_name
     end
