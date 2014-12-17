@@ -9,7 +9,7 @@
     <%= f.label :program_id %>
     <%= f.collection_select :program_id, Program.all, :id, :program_name %>
 		<br>
-		<%= f.submit %>
+    <%= f.submit "Check in/out" %>
 	<% end %>
 </div>
 
