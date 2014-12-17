@@ -13,6 +13,6 @@ class MembershipsController < ApplicationController
   end
   
   def membership_params
-    params.require(:membership).permit(:child_id, :program_id)
+    params.require(:membership).permit(:child_id, :family_id, :program_id)
   end
 end

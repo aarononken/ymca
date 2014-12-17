@@ -5,7 +5,7 @@
 #  id         :integer          not null, primary key
 #  family_id  :integer
 #  child_id   :integer
-#  checked_in :boolean          default("f")
+#  checked_in :boolean          default("false")
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  program_id :integer

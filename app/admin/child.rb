@@ -1,6 +1,5 @@
 ActiveAdmin.register Child do
 
-
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -33,5 +32,14 @@ ActiveAdmin.register Child do
   filter :child_first_name
   filter :child_last_name
   filter :family_parent_last_name, :as => :string, :label => "Family Surname"
+  
+  form do |f|
+    f.inputs "Child Details" do
+      f.input :child_first_name, :label => "First Name"
+      f.input :child_last_name, :label => "Last Name"
+      f.input :family_id, :label => "Family ID"
+    end
+    f.actions
+  end
   
 end
