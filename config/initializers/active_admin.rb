@@ -70,7 +70,7 @@ ActiveAdmin.setup do |config|
 
   # You can specify a method to be called on unauthorized access.
   # This is necessary in order to prevent a redirect loop which happens
-  # because, by default, user gets redirected to Dashboard. If user
+  # because, by default, user gets redirected to. If user
   # doesn't have access to Dashboard, he'll end up in a redirect loop.
   # Method provided here should be defined in application_controller.rb.
   # config.on_unauthorized_access = :access_denied
@@ -110,7 +110,7 @@ ActiveAdmin.setup do |config|
   # roots for each namespace.
   #
   # Default:
-  # config.root_to = 'families#index'
+   config.root_to = 'families#index'
 
 
   # == Admin Comments
