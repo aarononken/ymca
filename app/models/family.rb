@@ -29,4 +29,5 @@ class Family < ActiveRecord::Base
       nil
     end
   end
+  
 end
