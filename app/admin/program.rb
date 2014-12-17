@@ -12,6 +12,6 @@ ActiveAdmin.register Program do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-
+  filter :program_name
 
 end
