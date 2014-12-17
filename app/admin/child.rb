@@ -32,5 +32,6 @@ ActiveAdmin.register Child do
   
   filter :child_first_name
   filter :child_last_name
+  filter :family_parent_last_name, :as => :string, :label => "Family Surname"
   
 end
