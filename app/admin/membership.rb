@@ -32,9 +32,9 @@ ActiveAdmin.register Membership do
   
   form do |f|
     f.inputs "Membership Details" do
-      f.input :child_id
-      f.input :family_id
-      f.input :program_id
+      f.input :child_id, :as => :select, :collection => Child.all.map{ |c| ["#{c.child_first_name} #{c.child_last_name}", c.id]}
+      f.input :family_id, :as => :select, :collection => Family.all.map{ |f| ["#{f.parent_first_name} #{f.parent_last_name}", f.id]}
+      f.input :program_id, :as => :select, :collection => Program.all.map{ |p| [p.program_name, p.id]}
     end
     f.actions
   end
