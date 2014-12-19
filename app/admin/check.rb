@@ -5,7 +5,7 @@ ActiveAdmin.register Check do
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
   # permit_params :list, :of, :attributes, :on, :model
-  #
+  permit_params :family_id, :child_id, :checked_in, :program_id
   # or
   #
   # permit_params do
@@ -42,4 +42,12 @@ ActiveAdmin.register Check do
   filter :program_program_name, :as => :select, :collection => Program.all.map(&:program_name), :label => "Program Name"
   filter :created_at, :as => :date_range
 
+  form do |f|
+    f.inputs "Check Details" do
+      f.input :child_id, :as => :select, :collection => Child.all.map{ |c| ["#{c.child_first_name} #{c.child_last_name}", c.id]}, :label => "Child"
+      f.input :family_id, :as => :select, :collection => Family.all.map{ |f| ["#{f.parent_first_name} #{f.parent_last_name}", f.id]}, :label => "Family"
+      f.input :program_id, :as => :select, :collection => Program.all.map{ |p| ["#{p.program_name}", p.id]}, :label => "Program"
+    end
+    f.actions
+  end
 end

@@ -12,12 +12,8 @@ ActiveAdmin.register Child do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-    
-  controller do
-    def scoped_collection
-      resource_class.includes(:family)
-    end
-  end
+  
+  permit_params :child_first_name, :child_last_name, :family_id
   
   index do
     column :child_first_name
