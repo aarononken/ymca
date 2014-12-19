@@ -47,6 +47,7 @@ ActiveAdmin.register Check do
       f.input :child_id, :as => :select, :collection => Child.all.map{ |c| ["#{c.child_first_name} #{c.child_last_name}", c.id]}, :label => "Child"
       f.input :family_id, :as => :select, :collection => Family.all.map{ |f| ["#{f.parent_first_name} #{f.parent_last_name}", f.id]}, :label => "Family"
       f.input :program_id, :as => :select, :collection => Program.all.map{ |p| ["#{p.program_name}", p.id]}, :label => "Program"
+      f.input :checked_in, :as => :boolean, :label => "Checked in"
     end
     f.actions
   end
